@@ -1,0 +1,12 @@
+import { useState } from "react";
+import {useLocation} from "react-router-dom";
+function Userdashboard(){
+const location=useLocation();
+  const[userdata,setuserdata]=useState("")
+  function displaydate(){
+    setuserdata(location.state);
+    console.log(location.state)
+  }
+  return (<div><button onClick={displaydate}>Submit</button></div>)
+}
+export default Userdashboard
