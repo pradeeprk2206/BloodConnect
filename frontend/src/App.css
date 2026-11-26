@@ -6,7 +6,7 @@
 }
 .heading{
     margin: 20px auto;
-    color: #540404;
+    color: #570101;
     font-size: 40px;
     text-align: center;
     font-weight: 900;
@@ -23,17 +23,23 @@
   gap: 16px;
 }
 .name{
-   @apply border-4 border-gray-300 rounded-md p-4;
+   border: 4px solid #d1d5db;
+   border-radius: 6px;
+   padding: 16px;
    font-weight: 700;
    color:#d90323
 }
 .email{
-  @apply border-4 border-gray-300 rounded-md p-2;
+  border: 4px solid #d1d5db;
+  border-radius: 6px;
+  padding: 8px;
   font-weight: 700;
   color:#d90323
 }
 .password{
-  @apply border-4 border-gray-300 rounded-md p-2;
+  border: 4px solid #d1d5db;
+  border-radius: 6px;
+  padding: 8px;
   font-weight: 700;
   color:#d90323
 }

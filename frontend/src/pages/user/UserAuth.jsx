@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import image from '../../assets/images.jpg'
+import image from '../../assets/images.png'
 
 function Login() {
   const [name, setName] = useState("");
