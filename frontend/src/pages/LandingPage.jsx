@@ -23,7 +23,7 @@ function LandingPage() {
 
           <div className="login-card">
             <h3>User Login</h3>
-            <p>Find blood donors and Manage requests</p>
+            <p>Find blood donors and Manage requests.</p>
             
             <button onClick={() => navigate("/user/login")}>
               Continue

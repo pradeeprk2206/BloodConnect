@@ -6,6 +6,8 @@ import UserAuth from "./pages/user/UserAuth";
 import DonorAuth from "./pages/donor/DonorAuth";
 import DonorDashboard from "./pages/donor/DonorDashboard";
 import UserDashboard from "./pages/user/UserDashboard";
+import Userregister from './pages/user/Userregister';
+import Donorregister from './pages/donor/Donorregister';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Route path="/donor/login" element={<DonorAuth />} />
         <Route path="/donor/DonorDashboard" element={<DonorDashboard />} />
         <Route path="/user/UserDashboard" element={<UserDashboard />} />
+        <Route path="/user/Userregister" element={<Userregister/>}/>
+        <Route path="/donor/Donorregister" element={<Donorregister/>}/>
       </Routes>
     </BrowserRouter>
   );
