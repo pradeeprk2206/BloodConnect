@@ -53,6 +53,7 @@ function Login() {
     email: "",
     password: "",
     username: "",
+    age:"",
     
   })
 
@@ -69,7 +70,7 @@ function Login() {
         console.log(logindata)
   }
   const handleSubmit = (event) => {
-    if(regdata.username===logindata.username && regdata.email===logindata.email && regdata.password===logindata.password ){
+    if(regdata.username===logindata.username && regdata.email===logindata.email && regdata.password===logindata.password && regdata.age=== logindata.age ){
       event.preventDefault();
       alert("Login Successful")
         navigate("/donor/DonorDashboard",{state:logindata})
@@ -95,6 +96,8 @@ function Login() {
         <br />
         PASSWORD : <input type="password" className="password"  required  placeholder="Enter your Password here"  name="password"    onChange={handlechange}/>
         <br />
+          AGE: <input type="number" className="age" required placeholder="Enter your age here" name="age" onChange={handlechange}/>
+        <br/>
     
          <button type="SUBMIT" className='bg-red-500'>Submit</button>
       </form>

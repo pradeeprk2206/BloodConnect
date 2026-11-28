@@ -1,3 +1,35 @@
+.landing-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffcccc, #fff0f0, #ffe0e0);
+  box-shadow: inset 0 0 100px rgba(220, 20, 60, 0.2);
+  font-family: Arial, sans-serif;
+}
+.blood {
+  color: #172b4d;
+}
+
+.connect {
+  color: #d71920;
+}
+
+.hero-image {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 520px;
+  height: 300px;
+  object-fit: contain;
+  object-position: center;
+  height: 220px;
+  display: block;
+  margin: 0 auto;
+}
+
 .hero {
   text-align: center;
   padding: 90px 24px 55px;

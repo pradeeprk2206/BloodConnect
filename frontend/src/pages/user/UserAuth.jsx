@@ -12,6 +12,7 @@ function Login() {
         console.log(data)
         alert("register Success");
         navigate("/user/UserDashboard", { state: data });
+
     }
   
 
@@ -49,6 +50,7 @@ function Login() {
     email: "",
     password: "",
     username: "",
+    age:0
     
   })
 
@@ -62,7 +64,7 @@ function Login() {
   
   const handleSubmit = (event) => {
     event.preventDefault();
-    if(regdata.username===logindata.username && regdata.email===logindata.email && regdata.password===logindata.password){
+    if(regdata.username===logindata.username && regdata.email===logindata.email && regdata.password===logindata.password && Number(regdata.age)=== Number(logindata.age)){
           event.preventDefault();  
       alert("Login Successful")
         navigate("/user/UserDashboard",{state:logindata})
@@ -87,6 +89,8 @@ function Login() {
         <br />
         PASSWORD : <input type="password" className="password"  required  placeholder="Enter your Password here"  name="password"   onChange={handlechange}/>
         <br />
+        AGE: <input type="number" className="age" required placeholder="Enter your age here" name="age" onChange={handlechange}/>
+        <br/>
          <button type="SUBMIT" className='bg-red-500'>Submit</button>
       </form>
       <div className="text-center mt-4"> <p>Don't have an Account</p><Link to="/user/Userregister" className="text-blue-500 hover:underline">Register Here</Link></div>

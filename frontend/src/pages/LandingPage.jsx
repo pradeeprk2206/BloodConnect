@@ -2,18 +2,28 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./LandingPage.css";
+import bloodImage from "../assets/Bloodimage.png";
+
 
 function LandingPage() {
   const navigate = useNavigate();
 
   return (
+    
     <div className="landing-container">
+
       <section className="hero">
-        <h1>Donate Blood. Save Lives.</h1>
-        <p>
-          Connect blood donors with people in need.
-          Every drop counts.
-        </p>
+        <h1>
+          Welcome to
+          <br />
+          <span className="blood">Blood</span>
+          <span className="connect">Connect</span>
+        </h1>
+          <div className="hero-image">
+             <img src={bloodImage} alt="Blood donation illustration" />
+          </div>
+
+        <p>Together we can save lives ❤️</p>
       </section>
 
       <section className="login-section">
@@ -23,8 +33,8 @@ function LandingPage() {
 
           <div className="login-card">
             <h3>User Login</h3>
-            <p>Find blood donors and Manage requests.</p>
-            
+            <p>Find blood donors and manage requests.</p>
+
             <button onClick={() => navigate("/user/login")}>
               Continue
             </button>
@@ -42,8 +52,8 @@ function LandingPage() {
         </div>
       </section>
 
-
     </div>
   );
 }
+
 export default LandingPage;
